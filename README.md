@@ -1,4 +1,4 @@
-# 🛡️ FREUID Challenge 2026 - Identity Document Fraud Detection using Deep Learning 
+# 🛡️ FREUID Challenge 2026 - Identity Document Fraud Detection using Deep Learning  
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
