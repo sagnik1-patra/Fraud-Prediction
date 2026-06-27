@@ -1,0 +1,23 @@
+FREUID Fraud Detection with Class Weights
+========================================
+
+Total images used: 69365
+Threshold used: 0.3
+Accuracy: 0.4231
+ROC AUC: 0.5413
+Class weights: {0: 0.8667374734474572, 1: 2.363373083475298}
+
+Important Note:
+Class weights were used to give more importance to fraud samples.
+Threshold was lowered to 0.30 to detect fraud more aggressively.
+
+Generated Files:
+- fraud_weighted_best_model.keras
+- fraud_weighted_final_model.keras
+- fraud_weighted_final_model.h5
+- fraud_weighted_submission.csv
+- fraud_weighted_metrics.json
+- fraud_weighted_classification_report.csv
+- fraud_weighted_confusion_matrix_heatmap.png
+- fraud_weighted_roc_curve.png
+- fraud_weighted_fraud_recall_graph.png
