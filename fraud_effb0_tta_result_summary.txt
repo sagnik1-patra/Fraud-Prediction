@@ -1,0 +1,45 @@
+FREUID Fraud Detection - EfficientNetB0 + Fine-tuning + TTA
+==========================================================
+
+Model:
+PyTorch EfficientNetB0
+
+Training Strategy:
+- Stage 1: Frozen EfficientNetB0 feature extractor
+- Stage 2: Fine-tuning last EfficientNetB0 blocks
+- More epochs used
+- Fraud class weighting used
+- Test Time Augmentation used for final submission
+- Continuous scores used for submission
+- No hard threshold used for submission
+
+Settings:
+Image size: 224
+Batch size: 16
+Stage 1 epochs: 8
+Stage 2 epochs: 15
+Validation threshold only: 0.3
+
+Validation Results:
+Best validation AUC: 1.0000
+Final validation accuracy: 0.9982
+Final validation AUC: 1.0000
+
+Validation Score Statistics:
+{
+    "min_score": 1.501085833410798e-08,
+    "max_score": 1.0,
+    "mean_score": 0.42190518975257874,
+    "std_score": 0.49189895391464233
+}
+
+Test Score Statistics:
+{
+    "min_score": 0.0,
+    "max_score": 1.0,
+    "mean_score": 0.02521543763577938,
+    "std_score": 0.15594789385795593
+}
+
+Final submission file:
+C:\Users\NXTWAVE\Downloads\Fraud Prediction\fraud_results_effb0_tta_precise\fraud_effb0_tta_precise_continuous_submission.csv
